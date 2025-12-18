@@ -1,5 +1,6 @@
 # ssf-market-project
-
+![image](./ssf-market-project.mp4)
+&nbsp;
 SSF Shop을 벤치마킹한 **풀스택 쇼핑몰 프로젝트** (React + Redux + Spring Boot)
 
 [![Java](https://img.shields.io/badge/Java-21-007396?logo=java)](https://www.oracle.com/java/)
