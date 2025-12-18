@@ -353,7 +353,6 @@ npm run build
 ## 👥 팀원
 
 ### Frontend
-- **desfigne** - UI/UX 개발, Redux 상태 관리
 - **seungju-6607** - 컴포넌트 개발, 라우팅
 
 ### Backend
