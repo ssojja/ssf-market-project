@@ -61,7 +61,7 @@ Spring Boot를 기반으로 한 백엔드와 React 및 Redux Toolkit을 기반�
 | **유틸리티** | Lombok | - | - |
 
 **상태 관리 전략**:
-- **Redux Toolkit**: 전역 상태 (cart, product, auth)
+- **Redux Toolkit**: 전역 상태 (cart, product, auth 등)
 - **React Context**: 컴포넌트 트리 전체 공유
 
 ---
