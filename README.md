@@ -18,21 +18,21 @@ SSF Shop을 벤치마킹한 **풀스택 쇼핑몰 프로젝트** (React + Redux 
 
 Spring Boot를 기반으로 한 백엔드와 React 및 Redux Toolkit을 기반으로 한 프론트엔드로 구성된 시스템으로, 실무 수준의 쇼핑몰 구현과 협업형 개발 프로세스를 경험하는 것을 목표로 합니다.
 
-**프로젝트 특징**:
-- **멀티 모듈 구조**: Gradle 기반 backend + frontend 통합 프로젝트
-- **JPA**: JPA(Hibernate) 기반으로 데이터베이스 연동
-- **Redux Toolkit**: 전역 상태 관리 (cart, product, auth 등)
-- **React Router**: 최신 라우팅 라이브러리
-- **Spring Security**: BCrypt 암호화, CORS 설정
+**프로젝트 특징**
+- **멀티 모듈 구조** : Gradle 기반 backend + frontend 통합 프로젝트
+- **JPA** : JPA(Hibernate) 기반으로 데이터베이스 연동
+- **Redux Toolkit** : 전역 상태 관리 (cart, product, auth 등)
+- **React Router** : 최신 라우팅 라이브러리
+- **Spring Security** : BCrypt 암호화, CORS 설정
 
 ---
 
 ## 🎯 주요 목표
 
-- ✅ **쇼핑몰 핵심 기능 구현**: 상품 검색/필터, 장바구니, 주문, 결제, 사용자 관리, 플리마켓
-- ✅ **프론트엔드/백엔드 모듈화**: 컴포넌트 기반 개발 및 상태 관리 확립
-- ✅ **REST API 설계**: 백엔드 API와 프론트엔드 연동
-- 🚧 **보안 강화**: JWT 기반 인증, OAuth2 소셜 로그인
+- ✅ **쇼핑몰 핵심 기능 구현** : 상품 검색/필터, 장바구니, 주문, 결제, 사용자 관리, 플리마켓
+- ✅ **프론트엔드/백엔드 모듈화** : 컴포넌트 기반 개발 및 상태 관리 확립
+- ✅ **REST API 설계** : 백엔드 API와 프론트엔드 연동
+- 🚧 **보안 강화** : JWT 기반 인증, OAuth2 소셜 로그인
 
 ---
 
@@ -60,9 +60,9 @@ Spring Boot를 기반으로 한 백엔드와 React 및 Redux Toolkit을 기반�
 | **보안** | Spring Security | **빌드 도구** | React Scripts (CRA) |
 | **유틸리티** | Lombok | - | - |
 
-**상태 관리 전략**:
-- **Redux Toolkit**: 전역 상태 (cart, product, auth 등)
-- **React Context**: 컴포넌트 트리 전체 공유
+**상태 관리 전략**
+- **Redux Toolkit** : 전역 상태 (cart, product, auth 등)
+- **React Context** : 컴포넌트 트리 전체 공유
 
 ---
 
@@ -150,19 +150,19 @@ ssf-market-project/
 
 ## 🔄 개발 프로세스
 
-1. **요구사항 정의**: 기능/화면/DB 설계
-2. **환경 세팅**: GitHub 브랜치 전략, 초기 프로젝트 구조
-3. **백엔드 개발**: REST API 구현, 데이터베이스 스키마
-4. **프론트엔드 개발**: 컴포넌트 개발, Redux, API 연동
-5. **통합 및 테스트**: E2E 테스트, UI/UX 개선
+1. **요구사항 정의** : 기능/화면/DB 설계
+2. **환경 세팅** : GitHub 브랜치 전략, 초기 프로젝트 구조
+3. **백엔드 개발** : REST API 구현, 데이터베이스 스키마
+4. **프론트엔드 개발** : 컴포넌트 개발, Redux, API 연동
+5. **통합 및 테스트** : E2E 테스트, UI/UX 개선
 
 ---
 
 ## 🌐 배포 현황
 
 - **개발 환경**
-  - Backend: `http://localhost:8080`
-  - Frontend: `http://localhost:3000`
+  - Backend : `http://localhost:8080`
+  - Frontend : `http://localhost:3000`
 
 - **프로덕션** : 배포 예정
 
@@ -185,6 +185,6 @@ SSF Shop을 벤치마킹 대상으로 선정하여 실무 수준의 쇼핑몰 �
 
 ---
 
-**프로젝트 버전**: 1.0.0
-**최종 업데이트**: 2025-12-19
-**벤치마킹**: [SSF Shop](https://www.ssfshop.com)
+**프로젝트 버전** : 1.0.0
+**최종 업데이트** : 2025-12-19
+**벤치마킹** : [SSF Shop](https://www.ssfshop.com)
