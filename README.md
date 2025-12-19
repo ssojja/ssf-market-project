@@ -142,11 +142,8 @@ ssf-market-project/
 
 ---
 
-## 🗄️ 데이터베이스 구조
+## 🗄️ 데이터베이스 ERD 구조(MySQL 8.0)
 
-### MySQL 8.0
-
-**주요 테이블 ERD**:
 <img width="1408" height="853" alt="image" src="https://github.com/user-attachments/assets/7cc1a546-a6fd-428e-9ea7-6cb1d69957d0" />
 
 ---
