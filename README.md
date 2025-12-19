@@ -37,6 +37,17 @@ Spring Boot 3.5.6 기반 백엔드와 React 19.1.1 + Redux Toolkit 2.9.0 기반 
 
 ---
 
+## 👥 팀원
+
+### Frontend
+- **seungju-6607** - 컴포넌트 개발, 라우팅
+
+### Backend
+- **ssojja** - REST API 개발, Spring Security 설정
+- **doyoon0** - 데이터베이스 설계, JdbcTemplate 구현
+
+---
+
 ## 🛠️ 기술 스택
 
 ### Backend (Spring Boot)
@@ -167,39 +178,6 @@ spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce
 spring.datasource.username=root
 spring.datasource.password=mysql1234
 ```
-
----
-
-## 🔌 API 명세
-
-### Product API (`/product`)
-
-| HTTP | 경로 | 설명 | 요청 | 응답 |
-|------|------|------|------|------|
-| GET | `/all` | 전체 상품 조회 | - | `List<Product>` |
-| POST | `/pid` | 특정 상품 조회 | `{"pid": 1}` | `Product` |
-| POST | `/detailinfo` | 상품 상세 정보 | `{"pid": 1}` | `ProductDetailinfo` |
-| POST | `/qna` | 상품 Q&A 목록 | `{"pid": 1}` | `List<ProductQna>` |
-| GET | `/return` | 반품 정보 조회 | - | `ProductReturn` |
-
-### Member API (`/member`)
-
-| HTTP | 경로 | 설명 |
-|------|------|------|
-| POST | `/signup` | 회원가입 (BCrypt 암호화) |
-| POST | `/login` | 로그인 (세션/토큰 인증) |
-| GET | `/info` | 회원 정보 조회 (인증 필요) |
-
-### Cart API (`/cart`)
-
-| HTTP | 경로 | 설명 |
-|------|------|------|
-| GET | `/list/{memberId}` | 장바구니 목록 조회 |
-| POST | `/add` | 장바구니 추가 |
-| PUT | `/update` | 장바구니 수정 |
-| DELETE | `/remove/{itemId}` | 장바구니 삭제 |
-
-> 자세한 API 명세는 [DEVELOPMENT_GUIDE.md](./DEVELOPMENT_GUIDE.md#api-명세)를 참고하세요.
 
 ---
 
@@ -349,17 +327,6 @@ npm run build
 
 본 프로젝트는 **교육 및 포트폴리오 목적**으로 제작되었습니다.
 상업적 이용은 제한됩니다.
-
----
-
-## 👥 팀원
-
-### Frontend
-- **seungju-6607** - 컴포넌트 개발, 라우팅
-
-### Backend
-- **ssojja** - REST API 개발, Spring Security 설정
-- **doyoon0** - 데이터베이스 설계, JdbcTemplate 구현
 
 ---
 
