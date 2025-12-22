@@ -1,0 +1,383 @@
+/* src/pages/order/MyOrders.css — 깔끔 카드형 & 안전한 그리드 배치 */
+
+.my-orders-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.my-orders-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.my-orders-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+.my-orders-filter {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.my-orders-filter label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: #666;
+}
+
+.my-orders-filter input[type="date"] {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 14px;
+  min-width: 150px;
+}
+
+.my-orders-filter-btn {
+  border: none;
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+  padding: 9px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.my-orders-filter-btn:hover {
+  background: #333;
+}
+
+/* Empty State */
+.empty-orders-container {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+}
+
+.empty-orders-container > div {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.continue-shopping-link {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.continue-shopping-link:hover {
+  background: #333;
+}
+
+/* Orders List */
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.my-orders-item {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Order Body - 5 Column Grid: 날짜 | 이미지 | 상품정보 | 가격 | 결제완료 */
+.my-orders-body {
+  display: grid;
+  grid-template-columns: 120px 500px 1fr auto auto;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Date */
+.my-orders-date-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+}
+
+/* Product Image */
+.my-orders-product-image-wrapper {
+  width: 120px;
+  height: 120px;
+  padding-left: 15px;
+}
+
+.my-orders-product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.my-orders-product-image.placeholder {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #999;
+}
+
+/* Product Info */
+.my-orders-product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.my-orders-product-name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #111;
+  line-height: 1.4;
+}
+
+.my-orders-option {
+  font-size: 13px;
+  color: #666;
+}
+
+/* Price */
+.my-orders-price-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.my-orders-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+}
+
+/* Order Status - 우측 가운데 */
+.my-orders-status-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.my-orders-status {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #f0f0f0;
+  color: #666;
+  font-size: 13px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .my-orders-body {
+    grid-template-columns: 100px 320px 1fr auto auto;
+    gap: 16px;
+  }
+
+  .my-orders-product-image-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .my-orders-body {
+    grid-template-columns: 80px 340px 1fr auto auto;
+    gap: 12px;
+  }
+
+  .my-orders-product-image-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+
+  .my-orders-price-wrapper {
+    justify-content: flex-end;
+  }
+
+  .my-orders-status-wrapper {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 760px) {
+  .my-orders-item {
+    padding: 16px;
+  }
+
+  .my-orders-body {
+    grid-template-columns: 70px 250px 1fr auto auto;
+    gap: 10px;
+  }
+
+  .my-orders-product-image-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .my-orders-price-wrapper {
+    justify-content: flex-end;
+  }
+
+  .my-orders-status-wrapper {
+    justify-content: flex-end;
+  }
+
+  .my-orders-status {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 620px) {
+  .my-orders-item {
+    padding: 16px;
+  }
+
+  .my-orders-body {
+    grid-template-columns: 65px 130px 1fr auto auto;
+    gap: 10px;
+  }
+
+  .my-orders-product-image-wrapper {
+    width: 65px;
+    height: 65px;
+  }
+
+  .my-orders-price-wrapper {
+    justify-content: flex-end;
+  }
+
+  .my-orders-status-wrapper {
+    justify-content: flex-end;
+  }
+
+  .my-orders-status {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-orders-container {
+    padding: 20px 16px;
+  }
+
+  .my-orders-item {
+    padding: 16px;
+  }
+
+  .my-orders-body {
+    grid-template-columns: 60px 100px 1fr auto auto;
+    gap: 10px;
+  }
+
+  .my-orders-product-image-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .my-orders-date-label {
+    font-size: 14px;
+  }
+
+  .my-orders-product-name {
+    font-size: 14px;
+  }
+
+  .my-orders-price {
+    font-size: 15px;
+  }
+
+  .my-orders-price-wrapper {
+    justify-content: flex-end;
+  }
+
+  .my-orders-status-wrapper {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 425px) {
+    .my-orders-status {
+        display: none;
+    }
+}
+
+/* 주문 그룹 컨테이너 */
+.my-orders-item-group {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 20px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.my-orders-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.my-orders-detail-btn {
+  border: none;
+  background: none;
+  color: #7F39FB;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.my-orders-detail-btn:hover {
+  text-decoration: underline;
+}
+
+/* 주문 그룹 내 날짜 (헤더 역할) */
+.my-orders-group-date {
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 그룹 내 첫 상품은 위 구분선 제거 */
+.my-orders-item-group .my-orders-item {
+  border-top: 1px solid #eee;
+  border-radius: 0;
+  padding: 16px 0;
+}
+
+.my-orders-item-group .my-orders-item:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
